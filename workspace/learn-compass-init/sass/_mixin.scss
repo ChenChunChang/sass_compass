@@ -1,0 +1,8 @@
+@mixin col-6{
+  width: 50%;
+  float: left;
+}
+@mixin col($width){
+  width:$width;
+  float: left;
+}

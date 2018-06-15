@@ -4,8 +4,9 @@
 * reset...........css重置文件
 * main...........主要样式文件
 **/
-
-@import "variables" ,"compass/reset";//load_path //Normalize
+//"compass/reset"**--------**/load_path //Normalize
+@import "variables" ,"mixin";
+@import "normalize";
 //主标题样式
 .headline{
   font-family: $headline-ff;
@@ -28,3 +29,23 @@ a{
 .detail{
   font-size: 12px;
 }
+p{
+  color:hsl(270,100%,50%);
+}
+.webdemo{
+  @include col-6();
+}
+.cesi{
+  @include col(25%);
+}
+.error{
+  color: #f00;
+  opacity: 0.5;
+}
+.serious-error{
+  @extend .error;
+  border:1px #f00;
+}
+
+
+
