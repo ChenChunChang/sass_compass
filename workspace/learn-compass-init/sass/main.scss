@@ -46,6 +46,8 @@ p{
   @extend .error;
   border:1px #f00;
 }
-
+/*ssssssss*/
+@import "compass/layout/sticky-footer";
+@include sticky-footer(54px);
 
 
